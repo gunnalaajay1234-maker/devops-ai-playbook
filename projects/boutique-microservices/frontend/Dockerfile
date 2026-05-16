@@ -19,4 +19,4 @@ RUN npm install -g serve
 EXPOSE 3000
 
 # Use serve to host the static files
-CMD ["serve", "-s", "build", "-l", ]
+CMD ["serve", "-s", "build", "-l", "3000"]
