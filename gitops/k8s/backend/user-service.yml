@@ -1,46 +1,94 @@
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
   name: user-service
   namespace: boutique
+
 spec:
   replicas: 1
+
   selector:
     matchLabels:
       app: user-service
+
   template:
     metadata:
       labels:
         app: user-service
+
     spec:
+      initContainers:
+        - name: wait-for-postgres
+          image: busybox
+          command:
+            - sh
+            - -c
+            - >
+              until nc -z boutique-postgres 5432;
+              do
+                echo waiting for postgres;
+                sleep 5;
+              done;
+
       containers:
         - name: user-service
           image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/user-service:latest
+
           ports:
             - containerPort: 3006
+
           env:
             - name: NODE_ENV
               value: development
+
             - name: PORT
               value: "3006"
+
             - name: DATABASE_URL
               valueFrom:
                 secretKeyRef:
                   name: boutique-secrets
                   key: USERS_DB_URL
 
---- 
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 3006
+            initialDelaySeconds: 30
+            periodSeconds: 10
 
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 3006
+            initialDelaySeconds: 10
+            periodSeconds: 5
+
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+
+---
 apiVersion: v1
 kind: Service
+
 metadata:
   name: user-service
   namespace: boutique
+
 spec:
   selector:
     app: user-service
+
   ports:
     - protocol: TCP
       port: 3006
       targetPort: 3006
+
   type: ClusterIP

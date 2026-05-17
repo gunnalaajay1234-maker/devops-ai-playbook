@@ -13,14 +13,14 @@
 
 set -euo pipefail
 
-REGION="us-east-1"
+REGION="ap-south-1"
 ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 
 echo ""
 echo "============================================="
 echo " AIOps — IAM Setup"
-echo " Account : $ACCOUNT_ID"
-echo " Region  : $REGION"
+echo " Account : $"ACCOUNT_ID"
+echo " Region  : $"REGION"
 echo "============================================="
 echo ""
 
@@ -166,6 +166,7 @@ AGENT_INLINE_POLICY=$(cat <<EOF
       "Action": [
         "bedrock:InvokeModel",
         "bedrock:InvokeModelWithResponseStream"
+        "bedrock:InvokeAgent"
       ],
       "Resource": "arn:aws:bedrock:$REGION::foundation-model/*"
     }
