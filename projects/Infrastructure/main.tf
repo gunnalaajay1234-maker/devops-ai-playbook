@@ -63,4 +63,3 @@ module "argocd" {
 
   depends_on = [module.eks]
 }
-
