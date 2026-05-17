@@ -157,4 +157,4 @@ Once you implement the project:
 | Monitoring | Prometheus + Grafana |
 | Log Forwarding | AWS Fluent Bit → CloudWatch |
 | AIOps | AWS Bedrock Agent (Kira) |
-| AI Assistant | Claude Code + MCP Servers |
+| AI Assistant | Claude Code + MCP Servers | 
