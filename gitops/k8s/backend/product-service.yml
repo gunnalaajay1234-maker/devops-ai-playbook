@@ -34,9 +34,9 @@ spec:
       containers:
         - name: product-service
 <<<<<<< HEAD
-          image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/product-service:15c2fe53e6f0006b225b44ff3e23a58ed2c44a41
+          image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/product-service:94f6c4964430a8219b726c5deaaf55161b6ae0a9
 =======
-          image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/product-service:latest
+          image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/product-service:94f6c4964430a8219b726c5deaaf55161b6ae0a9
 >>>>>>> 8b3ebc3 (initial ai devsecops setup)
 
           ports:
