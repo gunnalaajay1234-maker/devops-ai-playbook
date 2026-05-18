@@ -20,7 +20,11 @@ spec:
     spec:
       containers:
         - name: frontend
+<<<<<<< HEAD
           image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/frontend:15c2fe53e6f0006b225b44ff3e23a58ed2c44a41
+=======
+          image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/frontend:latest
+>>>>>>> 8b3ebc3 (initial ai devsecops setup)
 
           ports:
             - containerPort: 3000

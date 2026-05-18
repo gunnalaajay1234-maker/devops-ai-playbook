@@ -33,7 +33,11 @@ spec:
 
       containers:
         - name: order-service
+<<<<<<< HEAD
           image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/order-service:15c2fe53e6f0006b225b44ff3e23a58ed2c44a41
+=======
+          image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/order-service:latest
+>>>>>>> 8b3ebc3 (initial ai devsecops setup)
 
           ports:
             - containerPort: 3004
