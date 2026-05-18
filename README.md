@@ -142,9 +142,9 @@ Once you implement the project:
 3. Troubleshoot the issues
 4. Share what you learned — and tag me so I know you're building along
 
----
+-----
 
-## Tech Stack
+## Tech Stack 
 
 | Layer | Technology |
 |-------|-----------|
@@ -157,4 +157,4 @@ Once you implement the project:
 | Monitoring | Prometheus + Grafana |
 | Log Forwarding | AWS Fluent Bit → CloudWatch |
 | AIOps | AWS Bedrock Agent (Kira) |
-| AI Assistant | Claude Code + MCP Servers | 
+| AI Assistant | Claude Code + MCP Servers |   
