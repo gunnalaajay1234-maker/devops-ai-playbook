@@ -33,9 +33,9 @@ spec:
       containers:
         - name: gateway
 <<<<<<< HEAD
-          image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/gateway:fcae611db5367d48fcd2121a3d2c96b7f5d8985d
+          image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/gateway:1ca8b2309d46c028aabe32a58c331c2d7813f2ca
 =======
-          image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/gateway:fcae611db5367d48fcd2121a3d2c96b7f5d8985d
+          image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/gateway:1ca8b2309d46c028aabe32a58c331c2d7813f2ca
 >>>>>>> 8b3ebc3 (initial ai devsecops setup)
 
           ports:
