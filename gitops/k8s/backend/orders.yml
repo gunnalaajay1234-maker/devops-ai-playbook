@@ -34,9 +34,9 @@ spec:
       containers:
         - name: orders
 <<<<<<< HEAD
-          image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/orders:1daaf9370c4b96f2b7976cb56d4cbb7fc4fd8ef0
+          image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/orders:fcae611db5367d48fcd2121a3d2c96b7f5d8985d
 =======
-          image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/orders:1daaf9370c4b96f2b7976cb56d4cbb7fc4fd8ef0
+          image: 995938832906.dkr.ecr.ap-south-1.amazonaws.com/orders:fcae611db5367d48fcd2121a3d2c96b7f5d8985d
 >>>>>>> 8b3ebc3 (initial ai devsecops setup)
 
           ports:
