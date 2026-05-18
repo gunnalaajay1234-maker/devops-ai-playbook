@@ -116,7 +116,7 @@ Then we actually build the project. You'll see:
 
 Finally, we explore how AI helps with:
 
-- Monitoring and anomaly detection
+- Monitoring and anomaly detection  
 - Log analysis at scale
 - Incident response automation
 - DevOps troubleshooting
@@ -127,7 +127,7 @@ Because modern DevOps is no longer just automation — it's **automation + intel
 
 ## Bonus Challenge
 
-You'll get access to this entire repository.
+You'll get access to this entire repository.  
 
 But there's a catch.
 
@@ -142,7 +142,7 @@ Once you implement the project:
 3. Troubleshoot the issues
 4. Share what you learned — and tag me so I know you're building along
 
------
+----------
 
 ## Tech Stack 
 
@@ -157,4 +157,4 @@ Once you implement the project:
 | Monitoring | Prometheus + Grafana |
 | Log Forwarding | AWS Fluent Bit → CloudWatch |
 | AIOps | AWS Bedrock Agent (Kira) |
-| AI Assistant | Claude Code + MCP Servers |   
+| AI Assistant | Claude Code + MCP Servers |     
